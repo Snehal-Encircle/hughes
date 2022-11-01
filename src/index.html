@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="http://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+  <title>Hughes Enterprises</title>
+</head>
+
+<body>
+  <header>
+    <div class="sitewide lgscreen:hidden py-4 bg-green-100">
+      <div class="container-fluid">
+        <div class="flex justify-between">
+          <div class="left flex items-center">
+            <h3>Example of sitewide notice goes here</h3>
+          </div>
+          <div class="right flex items-center">
+            <a href="#" class="btn mx-10">Request a Quote</a>
+            <a href="#" class="btn mx-10">View Catalog</a>
+            <div class="flex px-[39px] items-center">
+              <div class="cursor-pointer hover:text-blue-200">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span class="pl-[10px]">(267) 409-6100</span>
+              </div>
+            </div>
+            <a href="#" class="search-icon hover:text-blue-200">
+              <i class="fa fa-search cursor-pointer" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bot">
+      <div class="container-fluid">
+        <div class="flex items-center justify-between py-29">
+          <div class="logo smscreen:max-w-[200px]">
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
+          <div class="navigation">
+            <ul
+              class="xl:flex xl:items-center z-50 xl:z-auto xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 px-7 top-[200px] transition-all ease-in duration-200">
+              <li><a href="#">Equipment</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Resources</a></li>
+              <li class="!pr-0"><a href="#">Sustainability</a></li>
+            </ul>
+            <span class="text-3xl cursor-pointer ml-auto xl:hidden item-center duration-500">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- <header>
+    <div class="sitewide bg-green-100 flex items-center py-4 h-20">
+      <h3>Example of sitewide notice goes here</h3>
+      <a href="#" class="btn">Request a Quote</a>
+      <a href="#" class="btn">View Catalog</a>
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      <span>(267) 409-6100</span>
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <nav class="flex h-[120px] items-center">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="" />
+      </div>
+      <div class="navigation">
+        <ul class="flex">
+          <li>Equipment</li>
+          <li>Products</li>
+          <li>Industries</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Resources</li>
+          <li>Sustainability</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="header-img">
+    <div class="relative">
+      <img src="./assets/images/slide1bg.png" alt="" />
+      <div class="slide-content absolute top-0">
+        <div class="left-content">
+          <h1>
+            Welcome to a more
+            <span>strategic packaging partnership</span>
+          </h1>
+          <p class="py-10">Think of Hughes Enterprises as an extension of your operations team. </p>
+          <a href="#" class="btn">
+            Talk to a packaging expert
+          </a>
+        </div>
+        <div class="right-content pt-[69.51%] relative w-full inline-block align-top overflow-hidden">
+          <img src="./assets/images/slide1.png" alt="" class="inset-0 block h-full w-full object-cover absolute" />
+        </div>
+
+      </div>
+    </div>
+
+
+  </section> -->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+  integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  function Menu(e) {
+    let list = document.querySelector('ul');
+    e.name === 'menu'
+      ?
+      (e.name = "close", list.classList.add('top-[200px]'), list.classList.add('opacity-100'))
+      :
+      (e.name = "menu", list.classList.remove('top-[200px]'), list.classList.remove('opacity-100'))
+  }
+</script>
+
+</html>

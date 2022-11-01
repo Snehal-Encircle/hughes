@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border
+    }
+}
+
+@layer components {
+    .container-fluid {
+        @apply px-5 md:px-[45px] lg:px-[65px]
+    }
+    .btn {
+        @apply font-roboto font-bold text-base leading-[26px] text-center text-gray-100 bg-yellow-100 hover:bg-white rounded-10 py-12 px-31 cursor-pointer border border-transparent hover:border-gray-100
+    }
+    .sitewide {
+        @apply text-white font-roboto font-normal text-16 leading-26
+    }
+}
+
+@layer utilities {
+    .navigation ul li {
+        @apply midscreen:px-15 px-30 font-roboto font-bold text-18 leading-26 text-center tracking-wider text-gray-100 hover:text-blue-100
+    }
+}
