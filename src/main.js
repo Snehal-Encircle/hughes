@@ -72,3 +72,25 @@ var swiper = new Swiper(".wideSwiper", {
         },
       },
 });
+
+// 
+var swiper = new Swiper(".packagingSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1280: {
+          slidesPerView: 3,
+        },
+      },
+});
